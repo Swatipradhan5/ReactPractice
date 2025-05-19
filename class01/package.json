@@ -1,0 +1,25 @@
+{
+  "name": "class01",
+  "version": "1.0.0",
+  "description": "React Practice",
+  "main": "App.js",
+  "scripts": {
+    "test": "Jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swatipradhan5/ReactPractice.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Swati",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swatipradhan5/ReactPractice/issues"
+  },
+  "homepage": "https://github.com/Swatipradhan5/ReactPractice#readme",
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  }
+}
