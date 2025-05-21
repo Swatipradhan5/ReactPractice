@@ -11,17 +11,32 @@ const heading = React.createElement(
     "Hello World from React!" //it is a chlidren inside props
 );
 
-console.log(heading) //op- Object
+// console.log(heading) //op- Object
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //render method helps in converting the heading into a h1 tag and add into the html
 // root.render(heading);
 
 //We use JSX to make developers understand and easy to code.
+//this is a React element
 const jsxHeading = (
     <h1 className="heading">I am React from JSX</h1>
 );
+// root.render(jsxHeading);
 
-root.render(jsxHeading);
+const Title =() =>( <h1>I am Title</h1>);
+
+//React functional component
+const FunctionalComponent = () =>(
+    <div className="container">
+        {jsxHeading}
+        {/* this is here is called component composition */}
+        {Title()}
+        <Title/>
+        <Title></Title>
+        <h1>I am React Functional Component</h1>
+    </div>
+);
+root.render(<FunctionalComponent/>);
 
 //create this nested structure using React
 //  <div id="parent">
