@@ -13,9 +13,15 @@
         <h1>Swati is here</h1>
     </div>
     <h1>It will be printed in browser, as this is below the root element</h1>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="./App.js"></script>
+<!-- 
+    We will install React through NPM so that it is easy manage its future version and easy for the system to fetch the 
+    package from node_modules folder.
+    Hence, CDN links are not recommended to use React in our application -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+    
+    <script type="module" src="./App.js"></script>
 
    
 </body>

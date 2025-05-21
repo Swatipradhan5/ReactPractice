@@ -1,3 +1,7 @@
+import React from "react";
+//you will get a warning saying to import it from react-dom/client.
+import ReactDOM from "react-dom/client";
+
 //heading is a React element which is ultimately a JS object
 const heading = React.createElement(
     "h1",
@@ -6,11 +10,18 @@ const heading = React.createElement(
     {id:"heading", xyz:"abc"},
     "Hello World from React!" //it is a chlidren inside props
 );
+
 console.log(heading) //op- Object
 const root = ReactDOM.createRoot(document.getElementById("root"));
-
 //render method helps in converting the heading into a h1 tag and add into the html
 // root.render(heading);
+
+//We use JSX to make developers understand and easy to code.
+const jsxHeading = (
+    <h1 className="heading">I am React from JSX</h1>
+);
+
+root.render(jsxHeading);
 
 //create this nested structure using React
 //  <div id="parent">
@@ -39,4 +50,4 @@ const parent = React.createElement(
         [React.createElement("h1",{},"I am h1 tag"),React.createElement("h2",{},"I am h2 tag")]),
     ]
 )
-root.render(parent);
+// root.render(parent);
